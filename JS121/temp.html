@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Etsegenet Alamerew's IT121 javascript</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+
+ </head>
+ <body>
+     <header>
+     <h1>Etsegenet's IT161 javaScript Page!</h1>
+     <nav class="topnav" id="myTopnav">
+       <a href="index.html" class="active">Welcome</a>
+       <a href="http://w3schools.com" target="_blank">W3 Schools</a>
+       <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
+       <a href="fp/index.html">Project</a>
+       <a href="gallery.html">Assignment</a>
+       <a href="contact.php">Contact Etsegenet</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </nav>
+     </header>
+
+    <script>
+       //Ask user to enter temp in degree centigrade. 
+		var centigrade = prompt("Enter temperature in degree centigrade: ")
+		//parse string to int
+		var degCent=parseInt(centigrade)
+		//Convert degcent to degfahren
+		var degFahren=(9/5)*degCent+32
+		//Checking if entered temperature is valid using if and isNaN 
+		if(isNaN(degCent)){
+			alert("Not a number!!")
+		}else{
+			console.log(centigrade+ " degree in fahreheit is "+degFahren)
+
+    // writes to the document
+    document.write(centigrade+" degrees centigrade equals "+degFahren+" degrees Fahrenheit").style.color= "red";
+		}
+     </script>
+   
+        <footer>
+        <ul>
+            <li>Copyright &copy;2023</li>
+            <li>All Rights Reserved</li>
+            <li><a href="../index.php">Web Design by Etsegenet Alamerew</a></li>
+            <li><a id="html-checker" href="#">HTML Validation</a></li>
+            <li><a id="css-checker" href="#">CSS Validation</a></li>
+        </ul>
+            
+            <script>
+                //link of the html and css cheaker!
+                    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
+</footer>
+</body>
+</html>
