@@ -11,7 +11,7 @@
  </head>
  <body>
      <header>
-     <h1>Etsegenet's IT161 javaScript Page!</h1>
+     <h1>Temperature Converter!</h1>
      <nav class="topnav" id="myTopnav">
        <a href="index.html" class="active">Welcome</a>
        <a href="http://w3schools.com" target="_blank">W3 Schools</a>
@@ -23,22 +23,22 @@
      </nav>
      </header>
 
-    <script>
-       //Ask user to enter temp in degree centigrade. 
-		var centigrade = prompt("Enter temperature in degree centigrade: ")
-		//parse string to int
-		var degCent=parseInt(centigrade)
-		//Convert degcent to degfahren
-		var degFahren=(9/5)*degCent+32
-		//Checking if entered temperature is valid using if and isNaN 
-		if(isNaN(degCent)){
-			alert("Not a number!!")
-		}else{
-			console.log(centigrade+ " degree in fahreheit is "+degFahren)
+    <script>   
+        //Ask user to enter temp in degree centigrade. 
+        var centigrade = prompt("Enter temperature in degree centigrade: ")
+        //parse string to int
+        var degCent=parseInt(centigrade)
+        //Convert degcent to degfahren
+        var degFahren=(9/5)*degCent+32
+        //Checking if entered temperature is valid using if and isNaN 
+        if(isNaN(degCent)){
+          alert("Not a number!!")
+        }else{
+          console.log(centigrade+ " degree in fahreheit is "+degFahren)
 
-    // writes to the document
-    document.write(centigrade+" degrees centigrade equals "+degFahren+" degrees Fahrenheit").style.color= "red";
-		}
+        // writes to the document
+        document.write(centigrade+" degrees centigrade equals "+degFahren+" degrees Fahrenheit")
+        }
      </script>
    
         <footer>
